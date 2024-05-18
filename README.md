@@ -4,8 +4,10 @@ An exploration of this tutorial: https://www.youtube.com/watch?v=vDDjtwQDw2k&t=7
 </br>
 Data sourced from https://github.com/gniziemazity/drawing-data
 </br>
+Chart code from: https://github.com/gniziemazity/javascript_chart
+</br>
 Currently under construction!
-1:34:28
+1:46:42
 </br>
 To run the dataset generator:
 
