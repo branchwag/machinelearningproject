@@ -5,7 +5,7 @@ An exploration of this tutorial: https://www.youtube.com/watch?v=vDDjtwQDw2k&t=7
 Data sourced from https://github.com/gniziemazity/drawing-data
 </br>
 Currently under construction!
-1:02:55
+1:16:55
 </br>
 To run the dataset generator:
 
