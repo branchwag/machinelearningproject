@@ -43,4 +43,5 @@ function handleClick(sample, doScroll = true) {
       block: "center",
     });
   }
+  chart.selectSample(sample);
 }
