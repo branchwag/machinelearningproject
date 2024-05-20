@@ -13,13 +13,9 @@ for (const sample of samples) {
   );
   const functions = featureFunctions.inUse.map((f) => f.function);
   sample.point = functions.map((f) => f(paths));
-  // sample.point = [
-  //   featureFunctions.getPathCount(paths),
-  //   featureFunctions.getPointCount(paths),
-  // ];
 }
 
-const featureNames = ["Path Count", "Point Count"];
+const featureNames = featureFunctions.inUse.map((f) => f.name);
 
 fs.writeFileSync(
   constants.FEATURES,
