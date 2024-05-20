@@ -49,6 +49,8 @@
       const chart = new Chart(chartContainer, samples, options, handleClick);
 
       const sketchPad = new SketchPad(inputContainer);
+      sketchPad.canvas.style.cssText +=
+        "outline:10000px solid rgba(0,0,0,0.7);";
     </script>
   </body>
 </html>
