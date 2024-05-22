@@ -5,6 +5,7 @@ class Chart {
     this.axesLabels = options.axesLabels;
     this.styles = options.styles;
     this.icon = options.icon;
+    this.bg = options.bg;
     this.onClick = onClick;
 
     this.canvas = document.createElement("canvas");
@@ -195,6 +196,11 @@ class Chart {
     const { ctx, canvas } = this;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+    const topLeft = math.remapPoint(this.dataBounds, this.pixelBounds, [0, 1]);
+    const sz = (canvas.width - this.margin * 2) / this.dataTrans.scale ** 2;
+
+    ctx.globalAlpha = this.transparency;
+    ctx.drawImage(this.bg, ...topLeft, sz, sz);
     ctx.globalAlpha = this.transparency;
     this.#drawSamples(this.samples);
     ctx.globalAlpha = 1;
