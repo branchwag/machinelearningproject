@@ -62,7 +62,7 @@ button:disabled:hover {
 }
 
 .emphasize {
-  background-color: yellow;
+  background-color: yellow !important;
 }
 
 #container {
