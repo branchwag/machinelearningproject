@@ -6,9 +6,6 @@ Data sourced from https://github.com/gniziemazity/drawing-data
 </br>
 Chart code from: https://github.com/gniziemazity/javascript_chart
 </br>
-Currently under construction!
-3:29:38
-</br>
 To run the dataset generator:
 
 ```
