@@ -39,6 +39,7 @@
       const trainingSamples = training.samples;
       const testingSamples = testing.samples;
 
+      const k = 50;
       let correctCount = 0;
       let totalCount = 0;
 
@@ -112,7 +113,7 @@
 
       function classify(point) {
         const samplePoints = trainingSamples.map((s) => s.point);
-        const indices = utils.getNearest(point, samplePoints, 10);
+        const indices = utils.getNearest(point, samplePoints, k);
         const nearestSamples = indices.map((i) => trainingSamples[i]);
         const labels = nearestSamples.map((s) => s.label);
         const counts = {};
